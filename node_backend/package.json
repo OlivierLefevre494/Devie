@@ -1,0 +1,9 @@
+{
+    "name": "devie-websocket-server",
+    "version": "0.1",
+    "author": "Polis Minus <polisminus2247@gmail.com>",
+    "dependencies": {
+        "mysql": "^2.18.1",
+        "ws": "^7.4.5"
+    }
+}

@@ -1,0 +1,396 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body {
+  background-color: #D9D9D9;
+  margin: 0;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 80px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: calc((50px - 18.5px)/2);
+    top: calc((50px - 20px)/2);
+    font-size: 20px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainpage {
+  position: fixed;
+  right: 0;
+  margin-top: 60px;
+  width: calc(100vw - 60px);
+  transition: all 0.3s ease-in-out;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+  visibility: visible;
+}
+
+.dropdown {
+  height: 50px;
+  width: 50px;
+  float: right;
+  margin-right: 75px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-top: 7.5px;
+}
+
+.avatar-dropdown p {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  padding-left: 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 17.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+}
+
+.avatar-dropdown p:hover {
+  background-color: #b5b5b5;
+}
+
+.dropdown:hover .avatar-dropdown {display: block;}
+
+.messaging-link {
+  height: 65px;
+  width: 65px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/Messaging.png');
+}
+
+.community-link {
+  height: 65px;
+  width: 65px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 140%;
+  background-image: url('../images/community.png');
+}
+
+.header {
+    background-color: #00D181;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.side-bar {
+  background-color: #0d4786;
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+  width: 60px;
+  padding: 0;
+  float: left;
+  position: absolute;
+}
+
+.logobrand {
+  font-family: "Comfortaa", cursive;
+  float: left;
+  margin-left: 20px;
+  margin-top: 11.5px;
+  margin-bottom: 11.5px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.game-iframe {
+}
+
+.textdiv {
+  margin-left: 10px;
+      padding-left: 10px;
+      padding-top: 10px;
+      background-color: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+}
+
+.game-title {
+  font-family: 'UBUNTU', sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.game-description {
+  margin-top: 5px;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+}
+
+.game-description-title {
+  margin-top: 5px;
+  font-family: 'Ubuntu';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.game-credits {
+  margin-top: 5px;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+}
+
+.game-credits-title {
+  margin-top: 5px;
+  font-family: 'Ubuntu';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.game-controls {
+  margin-top: 5px;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+}
+
+.game-controls-title {
+  margin-top: 5px;
+  font-family: 'Ubuntu';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.game-result-div {
+  width: 60%;
+}
+
+.sidegames {
+    width: calc(40% - 25px);
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+    float: right;
+}
+
+.game-cover {
+  height: 10vh;
+  float: left;
+  border-radius: 10px;
+}
+
+.game-name {
+  float: left;
+    font-family: 'Ubuntu';
+    font-size: 2vh;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.creator-name {
+  margin-left: 10px;
+    font-family: 'Ubuntu';
+    font-size: 1.5vh;
+    margin-top: 5px;
+    line-height: 2vh;
+    float: left;
+}
+
+.play-button {
+  margin-left: 10px;
+  margin-right: calc((100%)/2);
+  margin-top: 10px;
+}
+
+.alltags {
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.tag-name {
+  font-size: 1.75vh;
+  float: left;
+  margin-left: 10px;
+    margin-top: 10px;
+}
+
+.game-result-div-side {
+  height: 10vh;
+  width: 100%;
+  float: left;
+  margin-bottom: 2vh;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+.fullscreen-btn {
+  color: white;
+padding: 5px;
+margin-right: 10px;
+}
+
+.fullscreen-btn:hover {
+  background-color: #002d5f;
+}
+
+.fullscreen-div {
+  margin-bottom: 10px;
+background-color: #0d4786;
+text-align: right;
+margin-left: 10px;
+}
+
+.game-iframe-div {
+  width: calc(100% - 10px);
+    max-height: 80vh;
+    text-align: center;
+    background-color: grey;
+    margin-left: 10px;
+    overflow-y: scroll;
+}

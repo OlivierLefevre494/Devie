@@ -1,0 +1,130 @@
+.body {
+  background-color: #D9D9D9;
+  margin: 0;
+}
+
+.header {
+  background-color: #00D181;
+  height: 4.5vw;
+  width: 100vw;
+}
+
+.side-bar {
+  background-color: #0d4786;
+  height: calc(100vh - 4.5vw);
+  margin-top: 4.5vw;
+  width: 4.5vw;
+  padding: 0;
+  float: left;
+  position: absolute;
+}
+
+.logobrand {
+  font-family: "Comfortaa", cursive;
+  float: left;
+  margin-left: 20px;
+  margin-top: 11.5px;
+  margin-bottom: 11.5px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.dropdown {
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin-right: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-top: 7.5px;
+}
+
+.avatar-dropdown p {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  padding-left: 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 17.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+}
+
+.avatar-dropdown p:hover {
+  background-color: #b5b5b5;
+}
+
+.dropdown:hover .avatar-dropdown {display: block;}
+
+.communityexplore {
+  height: calc(100vh - 4.5vw);
+  width: calc(100vw - 4.5vw);
+  margin-bottom: 60px;
+  margin-left: 4.5vw;
+  position: absolute;
+}
+
+.communitybrowse {
+  height: 3.5vw;
+  width: calc(100vw - 10vw - 4.5vw);
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 3vw;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.joinbtn {
+  float: left;
+  height: 2vw;
+  width: 3.5vw;
+  margin-top: 0.75vw;
+  margin-left: 1vw;
+}
+
+.communityname {
+  float: left;
+  font-family: sans-serif;
+  margin-left: 1vw;
+}
+
+.numofmembers {
+  float: left;
+  font-family: sans-serif;
+  margin-left: 1vw;
+}
+
+.creationdate {
+  float: right;
+  margin-right: 2vw;
+  font-family: sans-serif;
+}
+
+
+.communitypic {
+  height: 2vw;
+  width: 2vw;
+  float: left;
+  background-color: red;
+  margin-top: 0.75vw;
+  margin-left: 1.25vw;
+}

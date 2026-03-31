@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&Roboto:wght@100;300&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #D9D9D9;
+  font-family: "Ubuntu", "Roboto", "Comfortaa", sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: 9vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #00D181;
+}
+
+header h1 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  float: left;
+  margin: 0;
+  padding: 1%;
+}
+
+aside {
+  width: 5vw;
+  height: 91vh;
+  position: absolute;
+  left: 0;
+  top: 9vh;
+  background-color: #0d4786;
+}
+
+#messages {
+  position: absolute;
+  left: 5vw;
+  top: 9vh;
+  width: 95vw;
+  height: 91vh;
+  background-color: #d9d9d9;
+}
+
+#grp_menu {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#grp_menu h1 {
+  margin: 10%;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#grp_menu button {
+  position: absolute;
+  right: 2%;
+  top: 6%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#grp_menu img {
+  width: 2vw;
+}
+
+#grp_messages {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  height: 90%;
+  width: 75%;
+}
+
+#grp_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#grp_list li {
+  display: block;
+  padding: 2%;
+  transition: background .25s;
+}
+
+#grp_list li:hover {
+  background: #b5b5b5;
+  cursor: pointer;
+}
+
+#grp_list a, #grp_list span {
+  color: black;
+  font-size: 1.4em;
+  font-weight: light;
+  text-decoration: none;
+}
+
+#input {
+  position: absolute;
+  left: 25%;
+  top: 90%;
+  width: 75%;
+  height: 10%;
+}
+
+#input input {
+  position: absolute;
+  padding: 0;
+  padding-left: .5%;
+  width: 80%;
+  height: 50%;
+  left: 5%;
+  top: 25%;
+  outline: none;
+  border: none;
+  background: white;
+}
+
+#input button {
+  position: absolute;
+  background: white;
+  border: none;
+  width: 5%;
+  height: 50%;
+  left: 85%;
+  top: 25%
+}
+
+#input img {
+  vertical-align: middle;
+  width: 70%;
+  cursor: pointer;
+}
+
+.grp_block {
+  position: absolute;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.message {
+  margin-bottom: 1%;
+  padding: 1%;
+}
+
+.message:hover {
+  background: #b5b5b5;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message img {
+  width: 3vw;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+.message_time {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.message_content {
+  margin-left: 3vw !important;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.avatar {
+  height: 7vh;
+  width: 7vh;
+  background: url('../images/blankprofilepicture.png');
+  background-size: cover;
+  border-radius: 100%;
+}
+
+.avatar img {
+  width: 7vh;
+  border-radius: 100%;
+}
+
+.dropdown {
+  z-index: 1;
+  height: 7vh;
+  width: 7vh;
+  float: right;
+  margin-top: 1vh;
+  margin-right: 3vw;
+  position: relative;
+}
+
+.avatar-dropdown {
+  display: none;
+  position: absolute;
+  padding-top: 0.5%;
+}
+
+.avatar-dropdown p {
+  cursor: pointer;
+  padding: 0.5vw 1vw;
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size:1em;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+}
+
+.avatar-dropdown p:hover {
+  background-color: #b5b5b5;
+}
+
+.dropdown:hover .avatar-dropdown {
+  display: block;
+}
+
+.svg {
+  vertical-align: middle;
+}
+
+.pfp {
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+#sidebar ul, #sidebar li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar li {
+  display: inline-block;
+  text-align: center;
+  width: 5vw;
+  color: white;
+  cursor: pointer;
+}
+
+.messaging_icon {
+  height: 5vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/Messaging.png');
+}
+
+.fa-users {
+  margin-bottom: 1.25vw;
+}
+
+.adm_button {
+  position: fixed;
+  right: 1%;
+  border: none;
+  background: none;
+  text-align: right;
+  cursor: pointer;
+}
+
+.adm_button img {
+  min-width: 32px;
+}
+
+.group_selected {
+  background: #b5b5b5;
+}
+
+.tutorial-text-div {
+  background-color: white;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    left: calc(50% - 250px);
+    top: calc(50% - 250px);
+    border-radius: 10px;
+}
+
+.tutorial-text {
+  color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    margin: 0;
+    top: calc(50% - 24px);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.blurred {
+  filter: blur(5px);
+}

@@ -1,0 +1,244 @@
+
+.body {
+  background-color: #D9D9D9;
+  margin: 0;
+}
+
+.header {
+  background-color: #00D181;
+  height: 60px;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+}
+
+.side-bar {
+  background-color: #0d4786;
+  height: calc(100vh - 60px);
+  width: 60px;
+  padding: 0;
+  float: left;
+}
+
+.chats {
+  background-color: #FFFFFF;
+  height: calc(100vh - 60px);
+  width: 325px;
+  padding: 0;
+  float: left;
+}
+
+.msg-profile {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.message {
+  padding-bottom: 0.5%;
+  margin-bottom: 1%;
+  font-family: sans-serif;
+  width: 100%;
+  padding-left: 1%;
+  padding-top: 0.5%;
+}
+
+.message:hover {
+  background-color: #b5b5b5;
+}
+
+.msg-profile img {
+  width: 4.5vh;
+  height: 4.5vh;
+  border-radius: 100%;
+  vertical-align: middle;
+  font-family: sans-serif;
+}
+
+.msg-content {
+  margin: 0 0 0 4.5vh;
+  font-family: sans-serif;
+}
+
+.logobrand {
+  font-family: "Comfortaa", cursive;
+  float: left;
+  margin-left: 20px;
+  margin-top: 11.5px;
+  margin-bottom: 11.5px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.dropdown {
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin-right: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-top: 7.5px;
+}
+
+.avatar-dropdown p {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  padding-left: 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 17.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+}
+
+.avatar-dropdown p:hover {
+  background-color: #b5b5b5;
+}
+
+.dropdown:hover .avatar-dropdown {display: block;}
+
+.add-group-btn {
+  margin-top: 33.5px;
+  float: right;
+  margin-right: 40px;
+}
+
+.chats-header {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 32.5px;
+  font-weight: 500;
+  float: left;
+  margin-left: 40px;
+  padding: 0;
+  margin-top: 28px;
+}
+
+.chat-list {
+  margin-top: 103px;
+  padding: 0;
+}
+
+.chat-list li {
+  height: 50px;
+  display: block;
+  margin-top: 5px;
+}
+
+.chat-list li:hover {
+  background-color: #b5b5b5;
+}
+
+.chat-list li p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 150px;
+  margin-bottom: 13px;
+  margin-top: 13px;
+}
+
+.svg-add-friends {
+  height: 1.5em;
+    width: 1.5em;
+    margin-top: 20px;
+    float: left;
+    margin-left: 20px;
+}
+
+.group-avatars {
+  background-color: purple;
+  height: 2em;
+  width: 2em;
+  margin-top: 9px;
+  float: left;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.messages {
+  margin-left: 385px;
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+  width: calc(100vw - 325px);
+}
+
+.sample-avatar {
+  float: left;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.remove-person {
+  position: fixed;
+  z-index: 10;
+  right: 150px;
+  top: 15px;
+}
+
+.add-person {
+  position: fixed;
+  z-index: 10;
+  right: 200px;
+  top: 15px;
+}
+
+.sample-message {
+  width: 700px;
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  float: left;
+  padding-left: 10px;
+  font-family: sans-serif;
+  padding-right: 10px;
+}
+
+.send-message {
+  height: 40px;
+  width: calc((100vw - 385px)/100 * 90);
+  margin-left: calc((100vw - 385px)/100 * 5);
+  background-color: white;
+  position: fixed;
+  float: left;
+  bottom: 20px;
+}
+
+.send-file {
+  position: fixed;
+  bottom: 24px;
+  right: 90px;
+}
+
+.emojis {
+  position: fixed;
+  bottom: 24px;
+  right: 60px;
+}
